@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panor — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #ffffff;
+      padding: 0 16px;
+    }
+
+    .wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 0 80px;
+    }
+
+    header {
+      border-bottom: 3px solid #00695C;
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+    }
+
+    .app-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #00695C;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #555;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 36px 0 12px;
+    }
+
+    p { margin-bottom: 14px; }
+
+    ul {
+      margin: 0 0 14px 24px;
+    }
+
+    ul li { margin-bottom: 6px; }
+
+    .highlight {
+      background: #e8f5e9;
+      border-left: 4px solid #00695C;
+      border-radius: 4px;
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 15px;
+    }
+
+    a { color: #00695C; text-decoration: underline; }
+    a:hover { color: #004d40; }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header>
+      <p class="app-name">Sophus Thymos</p>
+      <h1>Privacy Policy — Panor</h1>
+      <p class="meta">Effective date: April 12, 2026 &nbsp;·&nbsp; Last updated: April 12, 2026</p>
+    </header>
+
+    <div class="highlight">
+      <strong>Short version:</strong> Panor is a fully offline app. Your price data,
+      photos, location, and shopping list never leave your device. We do not operate
+      any servers, have no user accounts, and collect no personal information ourselves.
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>
+      Panor is developed and published by <strong>Sophus Thymos</strong>. If you have
+      questions about this policy, contact us at
+      <a href="mailto:contact@sophusthymos.com">contact@sophusthymos.com</a>.
+    </p>
+
+    <h2>2. What Panor does</h2>
+    <p>
+      Panor lets you photograph grocery and household product price tags, automatically
+      extract product details using on-device AI, and track prices across stores over time.
+      All processing happens on your device. There is no Sophus Thymos cloud, no sync
+      service, and no account required.
+    </p>
+
+    <h2>3. Camera</h2>
+    <p>
+      Panor requests camera permission solely to photograph price tags. Images are processed
+      on-device by ML Kit OCR (text recognition) and then <strong>permanently
+      discarded</strong>. Price tag photos are never stored, never transmitted, and never
+      shared.
+    </p>
+    <p>
+      The only exception is the optional <em>Save Training Data</em> setting. If you
+      explicitly enable this in Settings, Panor stores a copy of each price tag photo
+      <strong>on your device only</strong> to help improve future AI models. These photos
+      remain under your control and can be deleted at any time via
+      Settings → Clear Training Data.
+    </p>
+
+    <h2>4. Location (GPS)</h2>
+    <p>
+      Panor requests location permission to automatically identify which store you are
+      standing in when you photograph a price tag, so the record is linked to the correct
+      store without you having to select it manually.
+    </p>
+    <ul>
+      <li>Your location is read on-device only at the moment of capture.</li>
+      <li>It is stored locally as part of the product record (latitude / longitude).</li>
+      <li>It is never transmitted to any server.</li>
+      <li>Location permission is not required — the app works without it; store
+          matching will simply be manual.</li>
+    </ul>
+
+    <h2>5. Data stored on your device</h2>
+    <p>Panor stores the following data locally in an encrypted SQLite database:</p>
+    <ul>
+      <li>Product records (type, brand, model, size, price, store, date)</li>
+      <li>Store information (name, address, GPS boundary)</li>
+      <li>Shopping list items</li>
+      <li>App settings and preferences</li>
+      <li>AI correction history (text only — used to improve extraction accuracy)</li>
+      <li>Price tag photos (only if Save Training Data is enabled)</li>
+    </ul>
+    <p>
+      All of this data is stored solely on your device. Uninstalling Panor removes all
+      locally stored data. There is no backup to any Sophus Thymos service.
+    </p>
+
+    <h2>6. Third-party services</h2>
+
+    <p><strong>Google AdMob</strong></p>
+    <p>
+      Panor displays banner advertisements provided by Google AdMob. AdMob may collect
+      device identifiers (such as the Android Advertising ID) and usage data to serve
+      relevant ads. This data is governed by
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+        Google's Privacy Policy</a>.
+      You can opt out of personalised ads at any time in your device settings under
+      <em>Google → Ads → Opt out of Ads Personalisation</em>.
+    </p>
+
+    <p><strong>Google ML Kit (OCR)</strong></p>
+    <p>
+      ML Kit text recognition runs entirely on-device. No image data or OCR output is
+      sent to Google.
+    </p>
+
+    <p><strong>MediaPipe / Gemma 3</strong></p>
+    <p>
+      AI field extraction uses Google's Gemma 3 model running locally via the MediaPipe
+      LLM Inference API. All inference is on-device. No text or model outputs are
+      transmitted.
+    </p>
+
+    <h2>7. Children's privacy</h2>
+    <p>
+      Panor is not directed at children under the age of 13. We do not knowingly collect
+      any information from children. If you believe a child has provided personal
+      information through the app, please contact us and we will address it promptly.
+    </p>
+
+    <h2>8. Data retention and deletion</h2>
+    <p>All data is retained on your device until you delete it. You can:</p>
+    <ul>
+      <li>Delete individual product records or stores from within the app.</li>
+      <li>Clear all AI training data via Settings → Clear Training Data.</li>
+      <li>Remove all app data by uninstalling Panor.</li>
+    </ul>
+    <p>
+      Because Sophus Thymos holds no copy of your data, we cannot retrieve or delete
+      data on your behalf beyond what the app itself provides.
+    </p>
+
+    <h2>9. Security</h2>
+    <p>
+      Sensitive settings are stored using Android's encrypted storage. The main product
+      database is stored in the app's private data directory, which is not accessible
+      to other apps on non-rooted devices.
+    </p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>
+      We may update this policy from time to time. When we do, we will revise the
+      "Last updated" date at the top of this page. Continued use of Panor after changes
+      constitutes acceptance of the revised policy.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      Questions or concerns about this policy?<br />
+      Email: <a href="mailto:contact@sophusthymos.com">contact@sophusthymos.com</a>
+    </p>
+
+    <footer>
+      &copy; 2026 Sophus Thymos. All rights reserved.
+    </footer>
+
+  </div>
+</body>
+</html>
